@@ -25,10 +25,10 @@ class StoreEmployeeRequest extends FormRequest
     {
         return [
             'name' => ['required', 'min:2'],
-            'employee_id' => ['required', 'unique:employees, employee_id'],
+            'employee_id' => ['required', 'unique:employees,employee_id'],
             'department' => ['required', 'min:2'],
             'employee_status_id' => ['required', 'numeric'],
-            'email' => ['required', 'email', 'unique:employees, email'],
+            'email' => ['required', 'email', 'unique:employees,email'],
         ];
     }
 }
