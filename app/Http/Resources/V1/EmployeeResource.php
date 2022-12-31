@@ -14,7 +14,6 @@ class EmployeeResource extends JsonResource
      */
     public function toArray($request)
     {
-        // return parent::toArray($request);
         return [
             'id' => $this->id,
             'name' => $this->name,
@@ -22,7 +21,8 @@ class EmployeeResource extends JsonResource
             'department' => $this->department,
             'employee_status' => $this->employeeStatus->name,
             'email'=> $this->email,
-            'accomodation_requests' => $this->accomodationRequests
+            'accomodation_requests' => $this->accomodationRequests,
+            'documents' => $this->documents
         ];
     }
 }
