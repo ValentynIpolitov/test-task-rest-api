@@ -29,6 +29,7 @@ class StoreEmployeeRequest extends FormRequest
             'department' => ['required', 'min:2'],
             'employee_status_id' => ['required', 'numeric'],
             'email' => ['required', 'email', 'unique:employees,email'],
+            'accomodation_requests'=> [],
         ];
     }
 }
