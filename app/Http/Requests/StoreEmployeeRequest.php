@@ -30,6 +30,7 @@ class StoreEmployeeRequest extends FormRequest
             'employee_status_id' => ['required', 'numeric'],
             'email' => ['required', 'email', 'unique:employees,email'],
             'accomodation_requests'=> [],
+            'files' => []//['max:2048']
         ];
     }
 }
